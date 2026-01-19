@@ -22,8 +22,9 @@
                 // to interpret this key as a modifier.
                 flavor = "balanced";
                 require-prior-idle-ms = <0>;
-                tapping-term-ms = <280>;
-                quick-tap-ms = <175>;
+                // Effectively infinite--treat even a very long hold as a tap,
+                // (unless interrupted).
+                tapping-term-ms = <3600000>;
                 bindings = <&kp>, <&kp>;
                 // Prevent interpreting rolls as modifiers: modifier
                 // only triggers when the modified key is the other hand, or thumb.
@@ -44,8 +45,7 @@
                 #binding-cells = <2>;
                 flavor = "balanced";
                 require-prior-idle-ms = <0>;
-                tapping-term-ms = <280>;
-                quick-tap-ms = <175>;
+                tapping-term-ms = <3600000>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <
                          0  1  2  3  4
