@@ -15,6 +15,50 @@
     };
 
     behaviors {
+        hml: home_row_mod_left {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                // balanced: require press and release of another key
+                // to interpret this key as a modifier.
+                flavor = "balanced";
+                require-prior-idle-ms = <0>;
+                tapping-term-ms = <280>;
+                quick-tap-ms = <175>;
+                bindings = <&kp>, <&kp>;
+                // Prevent interpreting rolls as modifiers: modifier
+                // only triggers when the modified key is the other hand, or thumb.
+                hold-trigger-key-positions = <
+                //       0  1  2  3  4
+                         5  6  7  8  9
+                //      10 11 12 13 14
+                        15 16 17 18 19
+                //      20 21 22 23 24
+                        25 26 27 28 29
+                        30 31 32
+                        33 34 35
+                >;
+                hold-trigger-on-release;
+        };
+        hmr: home_row_mod_right {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "balanced";
+                require-prior-idle-ms = <0>;
+                tapping-term-ms = <280>;
+                quick-tap-ms = <175>;
+                bindings = <&kp>, <&kp>;
+                hold-trigger-key-positions = <
+                         0  1  2  3  4
+                //       5  6  7  8  9
+                        10 11 12 13 14
+                //      15 16 17 18 19
+                        20 21 22 23 24
+                //      25 26 27 28 29
+                        30 31 32
+                        33 34 35
+                >;
+                hold-trigger-on-release;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -27,9 +71,9 @@
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
                         bindings = <
-   &kp Q        &kp W        &kp E        &kp R        &kp T            &kp Y        &kp U           &kp I            &kp O          &kp P
-   &mt LCTRL A  &mt LGUI S   &mt LALT D   &mt LSHIFT F &kp G            &kp H        &mt RSHIFT J    &mt RALT K       &mt RGUI L     &mt RCTRL SEMI
-   &mt LSHIFT Z &kp X        &kp C        &kp V        &kp B            &kp N        &kp M           &kp COMMA        &kp DOT        &mt RSHIFT SLASH
+   &kp  Q        &kp  W        &kp  E        &kp  R        &kp T            &kp Y        &kp U           &kp I         &kp O        &kp P
+   &hml LCTRL A  &hml LGUI S   &hml LALT D   &hml LSHIFT F &kp G            &kp H        &hmr RSHIFT J   hmr RALT K    &hmr RGUI L  &hmr RCTRL SEMI
+   &hml LSHIFT Z &kp  X        &kp  C        &kp  V        &kp B            &kp N        &kp M           &kp COMMA     &kp DOT      &hmr RSHIFT SLASH
                                    &kp ESC   &kp TAB  &kp RET           &kp SPACE    &kp BACKSPACE   &kp DEL
                         >;
                 };
