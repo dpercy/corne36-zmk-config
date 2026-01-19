@@ -31,7 +31,7 @@
    &mt LCTRL A  &mt LGUI S   &mt LALT D   &mt LSHIFT F &kp G            &kp H        &mt RSHIFT J &mt RALT K       &mt RGUI L     &mt RCTRL SEMI
    &mt LSHIFT Z &kp X        &kp C        &kp V        &kp B            &kp N        &kp M        &kp COMMA        &kp DOT        &mt RSHIFT FLSH
 
-                                   &kp LGUI   &mo 1   &kp RET           &kp SPACE   &mo 2   &kp BSPC
+                                   &kp ESC   &kp TAB  &kp RET           &kp SPACE   &kp BACKSPACE   &kp DEL
                         >;
                 };
 
