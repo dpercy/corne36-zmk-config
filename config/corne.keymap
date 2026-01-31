@@ -71,6 +71,11 @@
                 bindings = <&mo>, <&kp>;
                 hold-trigger-on-release;
         };
+        &sk: {
+                // make existing sticky-key behavior only modify the first
+                // key of a roll.
+                quick-release;
+        };
         slt: shift_layer_tap {
                 // Press: apply Shift to the next key ("sticky keys").
                 // Hold: momentary layer.
