@@ -99,7 +99,7 @@
    &hml LCTRL A  &hml LGUI S   &hml LALT D   &hml LSHIFT F &kp G            &kp H        &hmr RSHIFT J   &hmr RALT K   &hmr RGUI L  &hmr RCTRL SEMI
    &kp  Z        &kp  X        &kp  C        &kp  V        &kp B            &kp N        &kp M           &kp COMMA     &kp DOT      &kp SLASH
 
-                                      &kp ESC   &lt 2 TAB  &slt 1 LSHIFT           &lt 1 SPACE   &kp RET   &kp BACKSPACE
+                                      &kp ESC   &lt 2 TAB  &slt 1 LSHIFT           &lt 1 SPACE   &kp BACKSPACE   &kp RET
                         >;
                 };
 
