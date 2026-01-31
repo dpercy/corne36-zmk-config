@@ -21,7 +21,7 @@
                 // balanced: require press and release of another key
                 // to interpret this key as a modifier.
                 flavor = "balanced";
-                require-prior-idle-ms = <200>;
+                require-prior-idle-ms = <0>;  // tried 200 but any idle really messes me up with SHIFT...
                 // Effectively infinite--treat even a very long hold as a tap,
                 // (unless interrupted).
                 tapping-term-ms = <3600000>;
@@ -44,7 +44,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                require-prior-idle-ms = <200>;
+                require-prior-idle-ms = <0>;  // tried 200 but any idle really messes me up with SHIFT...
                 tapping-term-ms = <3600000>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <
@@ -68,7 +68,7 @@
                 flavor = "balanced";
                 require-prior-idle-ms = <200>;
                 tapping-term-ms = <3600000>;
-                bindings = <&kp>, <&kp>;
+                bindings = <&mo>, <&kp>;
                 hold-trigger-on-release;
         };
     };
@@ -87,7 +87,8 @@
    &kp  Q        &kp  W        &kp  E        &kp  R        &kp T            &kp Y        &kp U           &kp I         &kp O        &kp P
    &hml LCTRL A  &hml LGUI S   &hml LALT D   &hml LSHIFT F &kp G            &kp H        &hmr RSHIFT J   &hmr RALT K   &hmr RGUI L  &hmr RCTRL SEMI
    &hml LSHIFT Z &kp  X        &kp  C        &kp  V        &kp B            &kp N        &kp M           &kp COMMA     &kp DOT      &hmr RSHIFT SLASH
-                                   &kp ESC   &kp TAB  &kp RET           &kp SPACE    &kp BACKSPACE   &kp DEL
+
+                                      &kp ESC   &kp TAB  &lt 2 RET           &lt 2 SPACE    &kp BACKSPACE   &kp DEL
                         >;
                 };
 
@@ -130,7 +131,11 @@
                         >;
                 };
 
-                // 
+                // TODO:
+                //   - numbers
+                //   - F keys
+                //   - media
+                //   - bind layer hold
 
                 extra_1 {
                         status = "reserved";
