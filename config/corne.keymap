@@ -71,6 +71,17 @@
                 bindings = <&mo>, <&kp>;
                 hold-trigger-on-release;
         };
+        slt: shift_layer_tap {
+                // Press: apply Shift to the next key ("sticky keys").
+                // Hold: momentary layer.
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "balanced";
+                require-prior-idle-ms = <200>;  // should match my &lt above.
+                tapping-term-ms = <3600000>;
+                bindings = <&mo>, <&sk>;
+                hold-trigger-on-release;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -86,9 +97,9 @@
                         bindings = <
    &kp  Q        &kp  W        &kp  E        &kp  R        &kp T            &kp Y        &kp U           &kp I         &kp O        &kp P
    &hml LCTRL A  &hml LGUI S   &hml LALT D   &hml LSHIFT F &kp G            &kp H        &hmr RSHIFT J   &hmr RALT K   &hmr RGUI L  &hmr RCTRL SEMI
-   &hml LSHIFT Z &kp  X        &kp  C        &kp  V        &kp B            &kp N        &kp M           &kp COMMA     &kp DOT      &hmr RSHIFT SLASH
+   &kp  Z        &kp  X        &kp  C        &kp  V        &kp B            &kp N        &kp M           &kp COMMA     &kp DOT      &kp SLASH
 
-                                      &kp ESC   &lt 2 TAB  &lt 1 RET           &lt 1 SPACE    &kp BACKSPACE   &kp DEL
+                                      &kp ESC   &lt 2 TAB  &slt 1 LSHIFT           &lt 1 SPACE   &kp RET   &kp BACKSPACE
                         >;
                 };
 
