@@ -71,8 +71,8 @@
                 bindings = <&mo>, <&kp>;
                 hold-trigger-on-release;
         };
-        &sk: {
-                // make existing sticky-key behavior only modify the first
+        sk: {
+                // make existing(?) sticky-key behavior only modify the first
                 // key of a roll.
                 quick-release;
         };
