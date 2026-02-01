@@ -169,7 +169,8 @@
                                 &kp RBKT  
                                 &kp BACKSLASH
                                 
-                                &kp LCTRL kp LGUI  
+                                &kp LCTRL 
+                                &kp LGUI  
                                 &kp LALT 
                                 &kp LSHIFT 
                                 &none            
