@@ -137,7 +137,7 @@
       &kp STAR    
       &kp LPAR  
       &kp RPAR  
-      &kp QUOTE
+      &kp SINGLE_QUOTE
 
 &none     &none    &none    &none      &none            &kp PERCENT     &kp DOLLAR  &kp HASH  &kp AT    &kp EXCLAMATION
 &trans  &trans  &trans                                  &kp UNDERSCORE  &kp DEL     &trans
