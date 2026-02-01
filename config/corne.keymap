@@ -73,7 +73,7 @@
                         compatible = "zmk,behavior-hold-tap";
                         #binding-cells = <2>;
                         flavor = "balanced";
-                        require-prior-idle-ms = <200>;
+                        require-prior-idle-ms = <0>;
                         tapping-term-ms = <3600000>;
                         bindings = <&mo>, <&kp>;
                         hold-while-undecided;
@@ -92,7 +92,7 @@
                         compatible = "zmk,behavior-hold-tap";
                         #binding-cells = <2>;
                         flavor = "balanced";
-                        require-prior-idle-ms = <200>;  // should match my &lt above.
+                        require-prior-idle-ms = <0>;
                         tapping-term-ms = <3600000>;
                         bindings = <&mo>, <&skq>;
                         hold-while-undecided;
