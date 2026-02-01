@@ -142,7 +142,7 @@
                                 &kp DOT      
                                 &kp SLASH
                                 
-                                &kp NAV ESC   
+                                &lt NAV ESC   
                                 &lt NUM TAB  
                                 &slt SYM LSHIFT                              
                                 &lt FN SPACE  
