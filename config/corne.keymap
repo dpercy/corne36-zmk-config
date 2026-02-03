@@ -107,144 +107,152 @@
                                 //     q  w  e  r  t     y  u  i  o  p
                                 //     a  s  d  f  g     h  j  k  l  ;:
                                 //     z  x  c  v  b     n  m  ,< .> /?
+
+                                //          nav sym      num fn   media
                                 //      esc tab shft     spc bksp ret
-                                
-                                &kp  Q        
-                                &kp  W        
-                                &kp  E        
-                                &kp  R        
-                                &kp T           
-                                &kp Y         
-                                &kp U           
-                                &kp I         
-                                &kp O        
+
+                                &kp Q
+                                &kp W
+                                &kp E
+                                &kp R
+                                &kp T
+                                &kp Y
+                                &kp U
+                                &kp I
+                                &kp O
                                 &kp P
-                                
-                                &hml LCTRL A  
-                                &hml LGUI S   
-                                &hml LALT D   
-                                &hml LSHIFT F 
-                                &kp G           
-                                &kp H         
-                                &hmr RSHIFT J   
-                                &hmr RALT K   
-                                &hmr RGUI L  
+
+                                &hml LCTRL A
+                                &hml LGUI S
+                                &hml LALT D
+                                &hml LSHIFT F
+                                &kp G
+                                &kp H
+                                &hmr RSHIFT J
+                                &hmr RALT K
+                                &hmr RGUI L
                                 &hmr RCTRL SEMI
-                                
-                                &kp  Z        
-                                &kp  X        
-                                &kp  C        
-                                &kp  V        
-                                &kp B           
-                                &kp N         
-                                &kp M           
-                                &kp COMMA     
-                                &kp DOT      
+
+                                &kp Z
+                                &kp X
+                                &kp C
+                                &kp V
+                                &kp B
+                                &kp N
+                                &kp M
+                                &kp COMMA
+                                &kp DOT
                                 &kp SLASH
-                                
-                                &lt NAV ESC   
-                                &lt NUM TAB  
-                                &slt SYM LSHIFT                              
-                                &lt FN SPACE  
-                                &lt MEDIA BACKSPACE   
-                                &kp RET
+
+                                &kp ESC
+                                &lt NAV TAB
+                                &slt SYM LSHIFT
+
+                                &lt NUM SPACE
+                                &lt FN BACKSPACE
+                                &lt MEDIA RET
                         >;
                 };
                 symbol_layer {
                         display-name = "Sym";
                         bindings = <
-                                //     .  .  .  .  .     `~ ^  [{ ]} \|
+                        // TODO consider swapping " with :
+                        // '" feels like "symbol-y" somehow
+                        // downside is less qwerty compat.
+
+                                //     .  .  .  .  .     ^  +  {  }  -_
                                 //     .  .  .  .  .     &  *  (  )  '"
-                                //     .  .  .  .  .     %  $  #  @  !
+                                //     .  .  .  .  .        =  [  ]  \|
                                 //           .  .  .     -_ del  .
-                                
-                                &none     
-                                &none    
-                                &none    
-                                &none      
-                                &none            
-                                &kp GRAVE       
-                                &kp CARET   
-                                &kp LBKT  
-                                &kp RBKT  
-                                &kp BACKSLASH
-                                
-                                &kp LCTRL 
-                                &kp LGUI  
-                                &kp LALT 
-                                &kp LSHIFT 
-                                &none            
-                                &kp AMPERSAND   
-                                &kp STAR    
-                                &kp LPAR  
-                                &kp RPAR  
-                                &kp SINGLE_QUOTE
-                                
-                                &none     
-                                &none    
-                                &none    
-                                &none      
-                                &none            
-                                &kp PERCENT     
-                                &kp DOLLAR  
-                                &kp HASH  
-                                &kp AT    
-                                &kp EXCLAMATION
-                                
-                                &trans  
-                                &trans  
-                                &trans                                  
+
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &kp CARET
+                                &kp PLUS
+                                &kp LBRC
+                                &kp RBPC
                                 &kp MINUS
-                                &kp DEL     
+
+                                &kp LCTRL
+                                &kp LGUI
+                                &kp LALT
+                                &kp LSHIFT
+                                &none
+                                &kp AMPERSAND
+                                &kp STAR
+                                &kp LPAR
+                                &kp RPAR
+                                &kp SINGLE_QUOTE
+
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &kp EQUAL
+                                &kp LBKT
+                                &kp RBKT
+                                &kp BACKSLASH
+
+                                &trans
+                                &trans
+                                &trans
+                                &trans
+                                &kp DEL
                                 &trans
                         >;
                 };
                 number_layer {
                         display-name = "Num";
                         bindings = <
-                                //     .  .  .  .  .     .  7  8  9  +
-                                //     .  .  .  .  .     .  4  5  6  =
-                                //     .  .  .  .  .     .  1  2  3  -
-                                //           .  .  .     0  .  .
-                                
-                                &none     
-                                &none    
-                                &none    
-                                &none      
-                                &none            
-                                &none     
-                                &kp N7  
-                                &kp N8  
-                                &kp N9  
-                                &kp PLUS
-                                
-                                &kp LCTRL 
-                                &kp LGUI 
-                                &kp LALT 
-                                &kp LSHIFT 
-                                &none            
-                                &none     
-                                &kp N4  
-                                &kp N5  
-                                &kp N6  
-                                &kp EQUAL
-                                
-                                &none     
-                                &none    
-                                &none    
-                                &none      
-                                &none            
-                                &none     
-                                &kp N1  
-                                &kp N2  
-                                &kp N3  
-                                &kp MINUS
-                                
-                                &trans  
-                                &trans  
-                                &trans                                  
-                                &kp N0    
-                                &trans  
+                                //     1! 2@ 3# 4$ 5%    .  .  .  .  .
+                                //     6  7  8  9  0     .  .  .  .  .
+                                //     `~ .  .  .  .     .  .  .  .  .
+                                //           .  .  .     .  .  .
+
+                                &kp N1
+                                &kp N2
+                                &kp N3
+                                &kp N4
+                                &kp N5
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+
+
+                                &kp N6
+                                &kp N7
+                                &kp N8
+                                &kp N9
+                                &kp N0
+                                &none
+                                &kp RSHIFT
+                                &kp RALT
+                                &kp RGUI
+                                &kp RCTRL
+
+                                &kp GRAVE
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+
+                                &trans
+                                &trans
+                                &trans
+                                &trans
+                                &trans
                                 &trans
                         >;
                 };
@@ -255,94 +263,94 @@
                                 //     .  .  .  .  .     hm <  v  >  end
                                 //     .  .  .  .  .     .  .  .  .  .
                                 //           .  .  .     .  .  .
-                                
-                                &none     
-                                &none    
-                                &none    
-                                &none      
-                                &none            
-                                &none     
-                                &kp PG_UP  
-                                &kp UP    
-                                &kp PG_DN  
+
                                 &none
-                                
-                                &kp LCTRL 
-                                &kp LGUI 
-                                &kp LALT 
-                                &kp LSHIFT 
-                                &none            
-                                &kp HOME  
-                                &kp LEFT   
-                                &kp DOWN  
-                                &kp RIGHT    
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &kp PG_UP
+                                &kp UP
+                                &kp PG_DN
+                                &none
+
+                                &kp LCTRL
+                                &kp LGUI
+                                &kp LALT
+                                &kp LSHIFT
+                                &none
+                                &kp HOME
+                                &kp LEFT
+                                &kp DOWN
+                                &kp RIGHT
                                 &kp END
-                                
-                                &none     
-                                &none    
-                                &none    
-                                &none      
-                                &none            
-                                &none     
-                                &none      
-                                &none     
-                                &none        
+
                                 &none
-                                
-                                &trans  
-                                &trans  
-                                &trans                                  
-                                &trans    
-                                &trans  
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+
+                                &trans
+                                &trans
+                                &trans
+                                &trans
+                                &trans
                                 &trans
                         >;
                 };
                 fn_layer {
                         display-name = "Fn";
                         bindings = <
-                                //     f9 f10 f11 f12 .     .  .  .  .  .
-                                //     f5 f6  f7  f8  .     .  .  .  .  .
-                                //     f1 f2  f3  f4  .     .  .  .  .  .
-                                //            .   .   .     .  .  .
-                                
-                                &kp F9  
-                                &kp F10 
-                                &kp F11 
-                                &kp F12 
-                                &none                   
-                                &none   
-                                &none      
-                                &none    
-                                &none    
-                                &none     
-                                
-                                &kp F5  
-                                &kp F6  
-                                &kp F7  
-                                &kp F8  
-                                &none                   
-                                &none   
-                                &kp RSHIFT 
-                                &kp RALT 
-                                &kp RGUI 
+                                //      f1  f2  f3  f4  f5    .  .  .  .  .
+                                //      f6  f7  f8  f9 f10    .  .  .  .  .
+                                //     f11 f12 f13 f14 f15    .  .  .  .  .
+                                //               .   .   .    .  .  .
+
+                                &kp F1
+                                &kp F2
+                                &kp F3
+                                &kp F4
+                                &kp F5
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+
+                                &kp F6
+                                &kp F7
+                                &kp F8
+                                &kp F9
+                                &kp F10
+                                &none
+                                &kp RSHIFT
+                                &kp RALT
+                                &kp RGUI
                                 &kp RCTRL
-                                
-                                &kp F1  
-                                &kp F2  
-                                &kp F3  
-                                &kp F4  
-                                &none                   
-                                &none   
-                                &none      
-                                &none    
-                                &none    
-                                &none     
-                                
-                                &trans  
-                                &trans  
-                                &trans                                  
-                                &trans  
-                                &trans  
+
+                                &kp F11
+                                &kp F12
+                                &kp F13
+                                &kp F14
+                                &kp F15
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+
+                                &trans
+                                &trans
+                                &trans
+                                &trans
+                                &trans
                                 &trans
                         >;
                 };
@@ -353,45 +361,45 @@
                                 //     bc m  vd vu dm   .  .  .  .  .
                                 //     b0 b1 b2 b3 b4   .  .  .  .  .
                                 //           .  .  .    .  .  .
-                                
-                                &none         
-                                &kp K_PREV    
-                                &kp K_PP      
-                                &kp K_NEXT    
-                                &kp C_BRI_INC     
-                                &none   
-                                &none      
-                                &none    
-                                &none    
-                                &none     
-                                
-                                &bt BT_CLR    
-                                &kp K_MUTE    
-                                &kp K_VOL_DN  
-                                &kp K_VOL_UP  
-                                &kp C_BRI_DEC     
-                                &none   
-                                &kp RSHIFT 
-                                &kp RALT 
-                                &kp RGUI 
-                                &kp RCTRL
-                                
-                                &bt BT_SEL 0  
-                                &bt BT_SEL 1  
-                                &bt BT_SEL 2  
-                                &bt BT_SEL 3  
-                                &bt BT_SEL 4      
-                                &none   
-                                &none      
-                                &none    
-                                &none    
+
                                 &none
-                                
-                                &trans  
-                                &trans  
-                                &trans                                                    
-                                &trans  
-                                &trans  
+                                &kp K_PREV
+                                &kp K_PP
+                                &kp K_NEXT
+                                &kp C_BRI_INC
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+
+                                &bt BT_CLR
+                                &kp K_MUTE
+                                &kp K_VOL_DN
+                                &kp K_VOL_UP
+                                &kp C_BRI_DEC
+                                &none
+                                &kp RSHIFT
+                                &kp RALT
+                                &kp RGUI
+                                &kp RCTRL
+
+                                &bt BT_SEL 0
+                                &bt BT_SEL 1
+                                &bt BT_SEL 2
+                                &bt BT_SEL 3
+                                &bt BT_SEL 4
+                                &none
+                                &none
+                                &none
+                                &none
+                                &none
+
+                                &trans
+                                &trans
+                                &trans
+                                &trans
+                                &trans
                                 &trans
                         >;
                 };
