@@ -15,6 +15,6 @@ then
 else
     status=$?
     gh run view --log-failed $latest_run > fail
-    grep -E '(keymap|error):' fail
+    grep --color -E '(keymap|error):' fail
     exit $?
 fi
