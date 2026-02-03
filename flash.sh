@@ -2,11 +2,12 @@
 set -xeuo pipefail
 
 flash_side() {
-    watch -g lsblk
+    side=$1
+
+    watch -g  -n 0.5  lsblk
     sudo mount /dev/sda /mnt/
     lsblk
-    sudo cp firmware/corne_$side\ nice_view_adapter\ nice_view-nice_nano_v2-zmk.uf2
-    /mnt
+    sudo cp firmware/corne_$side\ nice_view_adapter\ nice_view-nice_nano_v2-zmk.uf2 /mnt
     lsblk
     sudo umount /mnt
     lsblk
