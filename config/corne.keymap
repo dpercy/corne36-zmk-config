@@ -108,8 +108,8 @@
                                 //     a  s  d  f  g     h  j  k  l  ;:
                                 //     z  x  c  v  b     n  m  ,< .> /?
 
-                                //          nav sym      num fn   media
-                                //      esc tab shft     spc bksp ret
+                                //          nav sym      num fn  media
+                                //      esc bks shft     spc tab ret
 
                                 &kp Q
                                 &kp W
@@ -145,11 +145,11 @@
                                 &kp SLASH
 
                                 &kp ESC
-                                &lt NAV TAB
+                                &lt NAV BACKSPACE
                                 &slt SYM LSHIFT
 
                                 &lt NUM SPACE
-                                &lt FN BACKSPACE
+                                &lt FN TAB
                                 &lt MEDIA RET
                         >;
                 };
@@ -163,7 +163,7 @@
                                 //     .  .  .  .  .     ^  +  {  }  -_
                                 //     .  .  .  .  .     &  *  (  )  '"
                                 //     .  .  .  .  .        =  [  ]  \|
-                                //           .  .  .     -_ del  .
+                                //           .  .  .     .  del  .
 
                                 &none
                                 &none
