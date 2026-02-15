@@ -157,7 +157,8 @@
                                 //     .  .  .  .  .     ^  +  {  }  -_
                                 //     .  .  .  .  .     &  *  (  )  ;:
                                 //     .  .  .  .  .        =  [  ]  \|
-                                //           .  .  .     capword  del  .
+                                //
+                                //           .  .  .     capword  . .
 
                                 &none
                                 &none
@@ -196,7 +197,7 @@
                                 &trans
                                 &trans
                                 &caps_word
-                                &kp DEL
+                                &trans
                                 &trans
                         >;
                 };
@@ -253,10 +254,14 @@
                 nav_layer {
                         display-name = "Nav";
                         bindings = <
+                                // Change backspace layer tap to plain backspace so it can repeat.
+                                // Put del right next to it: good for quick edits.
+                                //
                                 //     .  .  .  .  .     .  pu ^  pd .
                                 //     .  .  .  .  .     hm <  v  >  end
                                 //     .  .  .  .  .     .  .  .  .  .
-                                //           .  .  .     .  .  .
+                                //
+                                //           .  .  .     .  bks  del
 
                                 &none
                                 &none
