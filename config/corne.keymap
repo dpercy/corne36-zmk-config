@@ -103,7 +103,7 @@
                         display-name = "Base";
                         bindings = <
                                 //     q  w  e  r  t     y  u  i  o  p
-                                //     a  s  d  f  g     h  j  k  l  ;:
+                                //     a  s  d  f  g     h  j  k  l  '"
                                 //     z  x  c  v  b     n  m  ,< .> /?
 
                                 //          nav sym      num fn  media
@@ -129,7 +129,7 @@
                                 &hmr RSHIFT J
                                 &hmr RALT K
                                 &hmr RGUI L
-                                &hmr RCTRL SEMI
+                                &hmr RCTRL SINGLE_QUOTE
 
                                 &kp Z
                                 &kp X
@@ -154,12 +154,8 @@
                 symbol_layer {
                         display-name = "Sym";
                         bindings = <
-                        // TODO consider swapping " with :
-                        // '" feels like "symbol-y" somehow
-                        // downside is less qwerty compat.
-
                                 //     .  .  .  .  .     ^  +  {  }  -_
-                                //     .  .  .  .  .     &  *  (  )  '"
+                                //     .  .  .  .  .     &  *  (  )  ;:
                                 //     .  .  .  .  .        =  [  ]  \|
                                 //           .  .  .     .  del  .
 
@@ -183,7 +179,7 @@
                                 &kp STAR
                                 &kp LPAR
                                 &kp RPAR
-                                &kp SINGLE_QUOTE
+                                &kp SEMI
 
                                 &none
                                 &none
