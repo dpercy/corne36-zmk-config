@@ -107,7 +107,7 @@
                                 //     z  x  c  v  b     n  m  ,< .> /?
 
                                 //          nav sym      num fn  media
-                                //      esc bks shft     spc tab ret
+                                //      esc tab shft     spc bks ret
 
                                 &kp Q
                                 &kp W
@@ -143,11 +143,11 @@
                                 &kp SLASH
 
                                 &kp ESC
-                                &lt NAV BACKSPACE
+                                &lt NAV TAB
                                 &slt SYM LSHIFT
 
                                 &lt NUM SPACE
-                                &lt FN TAB
+                                &lt FN BACKSPACE
                                 &lt MEDIA RET
                         >;
                 };
