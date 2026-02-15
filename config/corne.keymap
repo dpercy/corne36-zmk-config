@@ -300,8 +300,8 @@
                                 &trans
                                 &trans
                                 &trans
-                                &trans
-                                &trans
+                                &kp BACKSPACE
+                                &kp DEL
                         >;
                 };
                 fn_layer {
