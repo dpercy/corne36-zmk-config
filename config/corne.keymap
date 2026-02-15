@@ -157,7 +157,7 @@
                                 //     .  .  .  .  .     ^  +  {  }  -_
                                 //     .  .  .  .  .     &  *  (  )  ;:
                                 //     .  .  .  .  .        =  [  ]  \|
-                                //           .  .  .     .  del  .
+                                //           .  .  .     capword  del  .
 
                                 &none
                                 &none
@@ -195,7 +195,7 @@
                                 &trans
                                 &trans
                                 &trans
-                                &trans
+                                &caps_word
                                 &kp DEL
                                 &trans
                         >;
