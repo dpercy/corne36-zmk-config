@@ -154,9 +154,9 @@
                 symbol_layer {
                         display-name = "Sym";
                         bindings = <
-                                //     .  .  .  .  .     ^  +  {  }  -_
+                                //     .  .  .  .  .     ^  +  [{ ]}  -_
                                 //     .  .  .  .  .     &  *  (  )  ;:
-                                //     .  .  .  .  .        =  [  ]  \|
+                                //     .  .  .  .  .        =  <  >  \|
                                 //
                                 //           .  .  .     .  .  .
 
@@ -167,8 +167,8 @@
                                 &none
                                 &kp CARET
                                 &kp PLUS
-                                &kp LBRC
-                                &kp RBRC
+                                &kp LBKT
+                                &kp RBKT
                                 &kp MINUS
 
                                 &kp LCTRL
@@ -189,8 +189,8 @@
                                 &none
                                 &none
                                 &kp EQUAL
-                                &kp LBKT
-                                &kp RBKT
+                                &kp LT
+                                &kp GT
                                 &kp BACKSLASH
 
                                 &trans
