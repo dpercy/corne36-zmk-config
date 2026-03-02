@@ -70,6 +70,20 @@
                 lt: layer_tap {
                         compatible = "zmk,behavior-hold-tap";
                         #binding-cells = <2>;
+                        // balanced requires a press-and-release of another key
+                        // before it considers it a hold, which is good for spacebar
+                        // which i tend to roll.
+                        flavor = "balanced";
+                        require-prior-idle-ms = <0>;
+                        tapping-term-ms = <3600000>;
+                        bindings = <&mo>, <&kp>;
+                        hold-while-undecided;
+                };
+                nlt: layer_tap {  // "nav layer tap"
+                        compatible = "zmk,behavior-hold-tap";
+                        #binding-cells = <2>;
+                        // tap-unless-interrupted considers tap of another key
+                        // enough to be a hold, which is nice for arrow keys.
                         flavor = "tap-unless-interrupted";
                         require-prior-idle-ms = <0>;
                         tapping-term-ms = <3600000>;
@@ -143,7 +157,7 @@
                                 &kp SLASH
 
                                 &kp ESC
-                                &lt NAV TAB
+                                &nlt NAV TAB
                                 &slt SYM LSHIFT
 
                                 &lt NUM SPACE
