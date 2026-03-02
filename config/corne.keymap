@@ -79,7 +79,7 @@
                         bindings = <&mo>, <&kp>;
                         hold-while-undecided;
                 };
-                nlt: layer_tap {  // "nav layer tap"
+                nlt: nav_layer_tap {
                         compatible = "zmk,behavior-hold-tap";
                         #binding-cells = <2>;
                         // tap-unless-interrupted considers tap of another key
