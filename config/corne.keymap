@@ -10,11 +10,10 @@
 
 // layer menmonics
 #define BASE 0
-#define SYM 1
-#define NUM 2
-#define NAV 3
-#define FN 4
-#define MEDIA 5
+#define SYMNUM 1
+#define NAV 2
+#define FN 3
+#define MEDIA 4
 
 / {
         chosen {
@@ -158,45 +157,43 @@
 
                                 &kp ESC
                                 &nlt NAV TAB
-                                &slt SYM LSHIFT
+                                &slt SYMNUM LSHIFT
 
-                                &lt NUM SPACE
+                                &lt SYMNUM SPACE
                                 &lt FN BACKSPACE
                                 &lt MEDIA RET
                         >;
                 };
-                symbol_layer {
-                        display-name = "Sym";
-                        bindings = <
-                                //     .  .  .  .  .     ^  +  [{ ]}  -_
-                                //     .  .  .  .  .     &  *  (  )  ;:
-                                //     .  .  .  .  .        =  <  >  \|
-                                //
-                                //           .  .  .     .  .  .
+                symnum_layer {
+                                //    1! 2@ 3# 4$ 5%            ^  +  [{ ]}  -_
+                                //    6  7  8  9  0             &  *  (  )  ;:
+                                //    `~ .  .  .  .                =  <  >  \|
+                                //                                 
+                                //          .  .  caps_word     .  .  .
 
-                                &none
-                                &none
-                                &none
-                                &none
-                                &none
+                                &kp N1
+                                &kp N2
+                                &kp N3
+                                &kp N4
+                                &kp N5
                                 &kp CARET
                                 &kp PLUS
                                 &kp LBKT
                                 &kp RBKT
                                 &kp MINUS
 
-                                &kp LCTRL
-                                &kp LGUI
-                                &kp LALT
-                                &kp LSHIFT
-                                &none
+                                &hml LCTRL      &kp N6
+                                &hml LGUI       &kp N7
+                                &hml LALT       &kp N8
+                                &hml LSHIFT     &kp N9
+                                &kp N0
                                 &kp AMPERSAND
-                                &kp STAR
-                                &kp LPAR
-                                &kp RPAR
-                                &kp SEMI
+                                &hmr RSHIFT     &kp STAR
+                                &hmr RALT       &kp LPAR
+                                &hmr RGUI       &kp RPAR
+                                &hmr RCTRL      &kp SEMI
 
-                                &none
+                                &kp GRAVE
                                 &none
                                 &none
                                 &none
@@ -209,61 +206,11 @@
 
                                 &trans
                                 &trans
-                                &trans
-                                &trans
-                                &trans
-                                &trans
-                        >;
-                };
-                number_layer {
-                        display-name = "Num";
-                        bindings = <
-                                //     1! 2@ 3# 4$ 5%          .  .  .  .  .
-                                //     6  7  8  9  0           .  .  .  .  .
-                                //     `~ .  .  .  .           .  .  .  .  .
-                                //           .  .  caps_word   .  .  .
-
-                                &kp N1
-                                &kp N2
-                                &kp N3
-                                &kp N4
-                                &kp N5
-                                &none
-                                &none
-                                &none
-                                &none
-                                &none
-
-
-                                &kp N6
-                                &kp N7
-                                &kp N8
-                                &kp N9
-                                &kp N0
-                                &none
-                                &kp RSHIFT
-                                &kp RALT
-                                &kp RGUI
-                                &kp RCTRL
-
-                                &kp GRAVE
-                                &none
-                                &none
-                                &none
-                                &none
-                                &none
-                                &none
-                                &none
-                                &none
-                                &none
-
-                                &trans
-                                &trans
                                 &caps_word
                                 &trans
                                 &trans
                                 &trans
-                        >;
+
                 };
                 nav_layer {
                         display-name = "Nav";
@@ -370,8 +317,8 @@
                 media_layer {
                         display-name = "Media";
                         bindings = <
-                                //     .  bk pp fw br   .  .  .  .  .
-                                //     bc m  vd vu dm   .  .  .  .  .
+                                //     .  << |> >> br   .  .  .  .  .
+                                //     bc m  -- ++ dm   .  .  .  .  .
                                 //     b0 b1 b2 b3 b4   .  .  .  .  .
                                 //           .  .  .    .  .  .
 
