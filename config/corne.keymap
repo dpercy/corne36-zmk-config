@@ -209,7 +209,7 @@
                                 &trans
                                 &trans
                                 &caps_word
-                                &trans
+                                &kp SPACE     // to avoid cancelling the layer during sym-spc-sym rolls.
                                 &trans
                                 &trans
                         >;
