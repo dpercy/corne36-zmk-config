@@ -43,6 +43,8 @@
                                         33 34 35
                         >;
                         hold-trigger-on-release;
+
+                        quick-tap-ms = <150>;   // mash then hold for key repeat (wasd etc)
                 };
                 hmr: home_row_mod_right {
                         compatible = "zmk,behavior-hold-tap";
@@ -65,6 +67,8 @@
                                         33 34 35
                         >;
                         hold-trigger-on-release;
+
+                        quick-tap-ms = <150>;   // mash then hold for key repeat (wasd etc)
                 };
                 lt: layer_tap {
                         compatible = "zmk,behavior-hold-tap";
@@ -77,6 +81,8 @@
                         tapping-term-ms = <3600000>;
                         bindings = <&mo>, <&kp>;
                         hold-while-undecided;
+
+                        quick-tap-ms = <150>;   // mash then hold for key repeat (backspace etc)
                 };
                 nlt: nav_layer_tap {
                         compatible = "zmk,behavior-hold-tap";
