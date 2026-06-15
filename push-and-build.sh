@@ -8,7 +8,7 @@ latest_run=$(gh run ls -L 1 --json databaseId --jq '.[].databaseId')
 gh run watch $latest_run
 
 rm -rf firmware/
-if gh run download $latest_run
+if gh run download $latest_run && [ -d firmware ]
 then
     echo success
     ./flash.sh
