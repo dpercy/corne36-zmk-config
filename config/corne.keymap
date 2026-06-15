@@ -133,16 +133,16 @@
                                 &kp O
                                 &kp P
 
-                                &hml LCTRL A
-                                &hml LGUI S
-                                &hml LALT D
-                                &hml LSHIFT F
+                                &hml LCTRL      A
+                                &hml LGUI       S
+                                &hml LALT       D
+                                &hml LSHIFT     F
                                 &kp G
                                 &kp H
-                                &hmr RSHIFT J
-                                &hmr RALT K
-                                &hmr RGUI L
-                                &hmr RCTRL SINGLE_QUOTE
+                                &hmr RSHIFT     J
+                                &hmr RALT       K
+                                &hmr RGUI       L
+                                &hmr RCTRL      SINGLE_QUOTE
 
                                 &kp Z
                                 &kp X
@@ -184,16 +184,16 @@
                                 &kp RBKT
                                 &kp MINUS
 
-                                &hml LCTRL      &kp N6
-                                &hml LGUI       &kp N7
-                                &hml LALT       &kp N8
-                                &hml LSHIFT     &kp N9
+                                &hml LCTRL      N6
+                                &hml LGUI       N7
+                                &hml LALT       N8
+                                &hml LSHIFT     N9
                                 &kp N0
                                 &kp AMPERSAND
-                                &hmr RSHIFT     &kp STAR
-                                &hmr RALT       &kp LPAR
-                                &hmr RGUI       &kp RPAR
-                                &hmr RCTRL      &kp SEMI
+                                &hmr RSHIFT     STAR
+                                &hmr RALT       LPAR
+                                &hmr RGUI       RPAR
+                                &hmr RCTRL      SEMI
 
                                 &kp GRAVE
                                 &none
