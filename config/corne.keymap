@@ -30,19 +30,20 @@
                         require-prior-idle-ms = <0>;  // tried 200 but any idle really messes me up with SHIFT...
                         tapping-term-ms = <2000>;
                         bindings = <&kp>, <&kp>;
-                        // Prevent interpreting rolls as modifiers: modifier
-                        // only triggers when the modified key is the other hand, or thumb.
-                        hold-trigger-key-positions = <
-                                //       0  1  2  3  4
-                                         5  6  7  8  9
-                                //      10 11 12 13 14
-                                        15 16 17 18 19
-                                //      20 21 22 23 24
-                                        25 26 27 28 29
-                                        30 31 32
-                                        33 34 35
-                        >;
-                        hold-trigger-on-release;
+
+                        // // Prevent interpreting rolls as modifiers: modifier
+                        // // only triggers when the modified key is the other hand, or thumb.
+                        // hold-trigger-key-positions = <
+                        //         //       0  1  2  3  4
+                        //                  5  6  7  8  9
+                        //         //      10 11 12 13 14
+                        //                 15 16 17 18 19
+                        //         //      20 21 22 23 24
+                        //                 25 26 27 28 29
+                        //                 30 31 32
+                        //                 33 34 35
+                        // >;
+                        // hold-trigger-on-release;
 
                         quick-tap-ms = <150>;   // mash then hold for key repeat (wasd etc)
                 };
@@ -53,20 +54,21 @@
                         require-prior-idle-ms = <0>;  // tried 200 but any idle really messes me up with SHIFT...
                         tapping-term-ms = <2000>;
                         bindings = <&kp>, <&kp>;
-                        hold-trigger-key-positions = <
-                                // Keys go left to right,
-                                // so each run of 5 alternates hands.
-                                // Thumbs at the end.
-                                         0  1  2  3  4
-                                //       5  6  7  8  9
-                                        10 11 12 13 14
-                                //      15 16 17 18 19
-                                        20 21 22 23 24
-                                //      25 26 27 28 29
-                                        30 31 32
-                                        33 34 35
-                        >;
-                        hold-trigger-on-release;
+
+                        // hold-trigger-key-positions = <
+                        //         // Keys go left to right,
+                        //         // so each run of 5 alternates hands.
+                        //         // Thumbs at the end.
+                        //                  0  1  2  3  4
+                        //         //       5  6  7  8  9
+                        //                 10 11 12 13 14
+                        //         //      15 16 17 18 19
+                        //                 20 21 22 23 24
+                        //         //      25 26 27 28 29
+                        //                 30 31 32
+                        //                 33 34 35
+                        // >;
+                        // hold-trigger-on-release;
 
                         quick-tap-ms = <150>;   // mash then hold for key repeat (wasd etc)
                 };
